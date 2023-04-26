@@ -1,0 +1,366 @@
+@keyframes color-change-bg {
+  0% {
+    background: #19dcea;
+  }
+  50% {
+    background: #b22cff;
+  }
+  100% {
+    background: #ea2222;
+  }
+}
+@keyframes color-change-names {
+  0% {
+    color: #19dcea;
+  }
+  50% {
+    color: #b22cff;
+  }
+  100% {
+    color: #ea2222;
+  }
+}
+@keyframes color-change-border {
+  0% {
+    border-color: #19dcea;
+  }
+  50% {
+    border-color: #b22cff;
+  }
+  100% {
+    border-color: #ea2222;
+  }
+}
+.container {
+  height: 90vh;
+  width: 90vw;
+  background-color: rgb(63, 63, 63);
+  margin: auto;
+}
+
+.about_container {
+  display: grid;
+  place-content: center;
+}
+
+.cover_container {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  padding: 10px 20px 10px 20px;
+  border-radius: 30px;
+  margin-top: 20px;
+  font-size: 1rem;
+  animation: color-change-bg 5s linear infinite alternate both;
+  border: none;
+  color: rgb(232, 232, 232);
+}
+
+.window {
+  height: 50%;
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  justify-content: space-around;
+}
+@media screen and (max-width: 920px) {
+  .window {
+    width: 80%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+.greeting {
+  height: 100%;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media screen and (max-width: 920px) {
+  .greeting {
+    width: 100%;
+  }
+}
+.greeting .main__greeting {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+@media screen and (max-width: 920px) {
+  .greeting .main__greeting {
+    justify-content: center;
+  }
+}
+.greeting .desc__greeting {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@media screen and (max-width: 920px) {
+  .greeting .desc__greeting {
+    align-items: center;
+  }
+}
+
+.myProjects_B {
+  width: 100%;
+}
+@media screen and (max-width: 920px) {
+  .myProjects_B {
+    width: 10rem;
+  }
+}
+
+.dragMe {
+  position: absolute;
+  left: 100%;
+  bottom: 25%;
+  transform: rotate(-35deg);
+  z-index: 0;
+}
+@media screen and (max-width: 920px) {
+  .dragMe {
+    display: none;
+  }
+}
+
+.name {
+  animation: color-change-names 5s linear infinite alternate both;
+}
+
+.side_cont {
+  position: relative;
+  width: 30%;
+}
+@media screen and (max-width: 920px) {
+  .side_cont {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+}
+
+.cube {
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 9.5rem;
+  width: 9rem;
+  cursor: pointer;
+}
+@media screen and (max-width: 920px) {
+  .cube {
+    height: 4.5rem;
+    width: 4rem;
+  }
+}
+
+.cmdComand {
+  z-index: 2;
+  background-image: url("../assets/cmdBlock.png");
+  position: absolute;
+  top: 20%;
+}
+@media screen and (max-width: 920px) {
+  .cmdComand {
+    top: 20%;
+    left: 20%;
+  }
+}
+
+.anvile {
+  z-index: 2;
+  background-image: url("../assets/Anvile.png");
+  position: absolute;
+  top: 35%;
+  left: 30%;
+}
+@media screen and (max-width: 920px) {
+  .anvile {
+    top: 50%;
+    left: 70%;
+  }
+}
+
+.redStone {
+  position: absolute;
+  top: 20%;
+  left: 65%;
+  z-index: 1;
+  background-image: url("../assets/redStone.png");
+}
+@media screen and (max-width: 920px) {
+  .redStone {
+    top: 80%;
+    left: 25%;
+  }
+}
+
+.go_to {
+  position: absolute;
+  bottom: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 10px;
+  border-radius: 30px;
+  border: 3px solid rgba(185, 185, 185, 0.21);
+}
+.go_to:hover {
+  background-color: rgba(185, 185, 185, 0.05);
+  border: 3px solid rgb(185, 185, 185);
+}
+.go_to > p {
+  font-size: 1rem;
+}
+@media screen and (max-width: 920px) {
+  .go_to > p {
+    font-size: 1rem;
+  }
+}
+
+.card-container {
+  display: grid;
+  align-items: center;
+  position: relative;
+  padding-top: 20px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card {
+  width: 900px;
+  height: 430px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card .innerCard {
+  width: 99%;
+  height: 95%;
+  background: white;
+  transform-origin: 10% 60%;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.card .innerCard .innercard_Title {
+  color: black;
+  font-weight: bold;
+  font-size: 3rem;
+}
+@media screen and (max-width: 500px) {
+  .card .innerCard .innercard_Title {
+    font-size: 2rem;
+  }
+}
+.card .innerCard .innerCard_Text {
+  text-align: justify;
+  width: 70%;
+  margin-top: 30px;
+}
+@media screen and (max-width: 500px) {
+  .card .innerCard .innerCard_Text {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 920px) {
+  .card {
+    width: 90vw;
+  }
+}
+
+.card_bg {
+  height: 100%;
+  width: 100%;
+  animation: color-change-bg 5s linear infinite alternate both;
+  position: absolute;
+  border-radius: 15px;
+}
+
+.form_container {
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 920px) {
+  .form_container {
+    flex-direction: column;
+  }
+}
+.form_container .form_sub {
+  width: 40%;
+}
+@media screen and (max-width: 920px) {
+  .form_container .form_sub {
+    width: 80%;
+  }
+}
+.form_container .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.form_container .form input {
+  padding-left: 10px;
+  width: 80%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: solid #555;
+  font-size: 1rem;
+}
+.form_container .form input:focus {
+  outline: none;
+  animation: color-change-border 5s linear infinite alternate both;
+}
+.form_container .form input:hover {
+  border-color: aliceblue;
+}
+.form_container .form .field {
+  height: 50px;
+}
+.form_container .form .text {
+  min-height: 100px;
+}
+.form_container .contact {
+  display: grid;
+  place-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.form_container .contact .title {
+  font-weight: bold;
+  font-size: 2.5rem;
+  animation: color-change-names 5s linear infinite alternate both;
+}
+@media screen and (max-width: 920px) {
+  .form_container .contact .title {
+    font-size: 2rem;
+  }
+}
+.form_container .contact .lets {
+  font-weight: bold;
+  font-size: 1.2rem;
+}/*# sourceMappingURL=style.css.map */
