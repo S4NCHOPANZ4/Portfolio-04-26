@@ -33,7 +33,7 @@ const AnimatedText = ({text, delay, clase, superClase}) => {
   }
   return (
     <motion.div 
-    style={{  display: "flex", fontSize: "2rem" }}
+    style={{  display: "flex", fontSize: "2rem"}}
     variants={conatiner} 
     initial="hidden" 
     animate="visible"

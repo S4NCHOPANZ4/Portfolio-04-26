@@ -2,9 +2,10 @@ import React from 'react'
 import {motion} from 'framer-motion'
 
 
-const AnimatedButton = ({text, arrow, clase}) => {
+const AnimatedButton = ({text, arrow, clase, type}) => {
   return (
     <motion.button
+    type={type? type: ''}
     className={clase}
     style={{
        display: 'flex',
