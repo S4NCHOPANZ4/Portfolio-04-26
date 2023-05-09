@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react';
+import { useRef } from 'react';
 import { ParallaxLayer, Parallax } from '@react-spring/parallax';
 import Projects from './pages/Projects';
 import AboutMe from './pages/AboutMe';
